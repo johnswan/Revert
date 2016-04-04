@@ -117,6 +117,7 @@
 		BB735B441C9FCD9D0092FA6F /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */; };
 		BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB735B451C9FD0490092FA6F /* Assets.xcassets */; };
 		BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB735B451C9FD0490092FA6F /* Assets.xcassets */; };
+		BB8623E21CB1EBB3002EF433 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8623E11CB1EBB3002EF433 /* SearchViewController.swift */; };
 		BB92F13A1C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */; };
 		BB92F13C1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */; };
 		BB92F1401C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */; };
@@ -124,6 +125,7 @@
 		BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */; };
 		BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
 		BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB957F8D1CA0B57C000F09CA /* StackView.xib */; };
+		BB9C065D1CB216A100EA9265 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9C065C1CB216A100EA9265 /* Person.swift */; };
 		BBB0D3CB1CAB7A1F00449A9B /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */; };
 		BBB0D3CC1CACA67200449A9B /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A535C481ADB563B0082778A /* ControlsViewController.swift */; };
 		BBB0D3CD1CACA75D00449A9B /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */; };
@@ -237,10 +239,12 @@
 		BB735B401C9FCC590092FA6F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		BB735B411C9FCC590092FA6F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Sources/HomeViewController.swift; sourceTree = "<group>"; };
 		BB735B451C9FD0490092FA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Shared/Assets.xcassets; sourceTree = "<group>"; };
+		BB8623E11CB1EBB3002EF433 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Sources/SearchViewController.swift; sourceTree = "<group>"; };
 		BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Shared.xcconfig"; path = "Configurations/Revert-tvOS-Shared.xcconfig"; sourceTree = "<group>"; };
 		BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
 		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Release.xcconfig"; path = "Configurations/Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
 		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
+		BB9C065C1CB216A100EA9265 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSerializableViewController.swift; sourceTree = "<group>"; };
 		BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
@@ -533,6 +537,7 @@
 			children = (
 				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
 				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
+				BB9C065E1CB2185300EA9265 /* Models */,
 				BBB6FCC01CA9FBE300AF24F3 /* Subclasses */,
 				BB2720A11C9B92BD002E53EE /* View Controllers */,
 				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
@@ -547,6 +552,7 @@
 				BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */,
 				BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */,
 				BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */,
+				BB8623E11CB1EBB3002EF433 /* SearchViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -606,6 +612,14 @@
 			);
 			name = Resources;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		BB9C065E1CB2185300EA9265 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB9C065C1CB216A100EA9265 /* Person.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		BBB6FCB81CA37CAD00AF24F3 /* Data Sources */ = {
@@ -877,6 +891,8 @@
 				BBED3B491CA228A100FFFF04 /* RevertSplitViewController.swift in Sources */,
 				BB2720AF1C9B99FA002E53EE /* StoryboardIdentifiers.swift in Sources */,
 				BB2720AE1C9B9894002E53EE /* TableViewCells.swift in Sources */,
+				BB8623E21CB1EBB3002EF433 /* SearchViewController.swift in Sources */,
+				BB9C065D1CB216A100EA9265 /* Person.swift in Sources */,
 				BB2720A81C9B95FF002E53EE /* Requirement.swift in Sources */,
 				BB2720A61C9B9571002E53EE /* Collectable.swift in Sources */,
 				BBB0D3D51CACD9BF00449A9B /* NotSerializableViewController.swift in Sources */,

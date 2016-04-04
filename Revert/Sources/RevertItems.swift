@@ -1,3 +1,4 @@
+
 //
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 //
@@ -12,6 +13,7 @@ enum RevertItems: String {
   case Control = "ControlItems"
   case MapLocations = "MapLocations"
   case LayerProperties = "LayerPropertiesItems"
+  case Persons = "Persons"
   case View = "ViewItems"
 
   var data: [[String: AnyObject]] {

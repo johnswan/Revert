@@ -11,13 +11,29 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     guard let tabBarController = self.window?.rootViewController as? UITabBarController else {
       fatalError("Root view controller should be a `UITabBarController`")
     }
-    // TODO: configure tabbarcontroller for delegate
-//    self.splitViewControllerDelegate.configureSplitViewController(splitViewController)
+
+    // UISearchController can't be added through Storyboards as of tvOS 9
+    tabBarController.viewControllers?.append(self.dynamicType.packagedSearchController())
     
     return true
   }
-  
+
   // MARK: Private
-  private var splitViewControllerDelegate = SplitViewControllerDelegate()
+  private static func packagedSearchController() -> UIViewController {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    guard let searchViewController = storyboard.instantiateViewControllerWithIdentifier(Storyboards.VC.SearchController) as? SearchViewController else {
+      fatalError("Unable to instantiate `SearchViewController` from the main storyboard file.")
+    }
+
+    let searchController = UISearchController(searchResultsController: searchViewController)
+    searchController.searchResultsUpdater = searchViewController
+    searchController.searchBar.placeholder = NSLocalizedString("Enter name or city", comment: "Search prompt")
+
+    let searchContainer = UISearchContainerViewController(searchController: searchController)
+    searchContainer.title = NSLocalizedString("Search", comment: "Search controller container title")
+
+    let searchNavigationController = UINavigationController(rootViewController: searchContainer)
+    return searchNavigationController
+  }
 }
 
