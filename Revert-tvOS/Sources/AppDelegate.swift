@@ -20,6 +20,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
   // MARK: Private
   private static func packagedSearchController() -> UIViewController {
+    // Load the view controller that will act as data source from its storyboard, so we don't have to do layout programmatically.
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     guard let searchViewController = storyboard.instantiateViewControllerWithIdentifier(Storyboards.VC.SearchController) as? SearchViewController else {
       fatalError("Unable to instantiate `SearchViewController` from the main storyboard file.")
@@ -29,6 +30,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     searchController.searchResultsUpdater = searchViewController
     searchController.searchBar.placeholder = NSLocalizedString("Enter name or city", comment: "Search prompt")
 
+    // UISearchController needs to be inside a container view controller when presented as part of the navigation of the app.
     let searchContainer = UISearchContainerViewController(searchController: searchController)
     searchContainer.title = NSLocalizedString("Search", comment: "Search controller container title")
 

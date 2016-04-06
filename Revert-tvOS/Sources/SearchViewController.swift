@@ -23,6 +23,25 @@ final class SearchViewController: UITableViewController {
   //MARK: Private
   private let collection = CollectableCollection<Person>(items: .Persons)
   private let dataSource: DataSource<Person, BasicCell>
+
+  private var searchText: String? {
+    didSet {
+      guard searchText != oldValue else {
+        // We don't want to keep reloading contents if the search text has not changed
+        return
+      }
+
+      if let string = searchText where string.isEmpty == false {
+        self.dataSource.filter({
+          $0.city.localizedStandardContainsString(string) || $0.name.localizedStandardContainsString(string)
+        })
+      } else {
+        self.dataSource.filter(nil)
+      }
+
+      self.tableView.reloadData()
+    }
+  }
 }
 
 private extension SearchViewController {
@@ -36,14 +55,6 @@ private extension SearchViewController {
 
 extension SearchViewController: UISearchResultsUpdating {
   func updateSearchResultsForSearchController(searchController: UISearchController) {
-    if let searchText = searchController.searchBar.text where searchController.searchBar.text?.characters.count > 0 {
-      self.dataSource.filter({
-        $0.city.localizedStandardContainsString(searchText) || $0.name.localizedStandardContainsString(searchText)
-      })
-    } else {
-      self.dataSource.filter(nil)
-    }
-
-    self.tableView.reloadData()
+    self.searchText = searchController.searchBar.text
   }
 }

@@ -4,11 +4,6 @@
 import Foundation
 
 struct Person: Collectable {
-  private enum Attributes: String {
-    case Name = "name"
-    case City = "city"
-  }
-
   let name: String
   let city: String
 
@@ -19,5 +14,11 @@ struct Person: Collectable {
 
     self.name = name
     self.city = city
+  }
+
+  // MARK: Private
+  private enum Attributes: String {
+    case Name = "name"
+    case City = "city"
   }
 }
