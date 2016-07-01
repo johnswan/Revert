@@ -65,6 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.80518490076065063" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="KVv-8A-u7a" kind="relationship" relationship="viewControllers" id="qsL-ra-9EC"/>
@@ -3072,7 +3073,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="banner_WhatsNew" width="2200" height="848"/>
+        <image name="banner_WhatsNew" width="1920" height="670"/>
         <image name="default_reveal" width="130" height="110"/>
         <image name="delorian" width="45" height="16"/>
         <image name="reveal_pretty" width="800" height="600"/>
