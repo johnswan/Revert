@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="Kps-Wr-dkW">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="Kps-Wr-dkW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -65,7 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.80518490076065063" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.68479305505752563" blue="0.85942310094833374" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="KVv-8A-u7a" kind="relationship" relationship="viewControllers" id="qsL-ra-9EC"/>
@@ -3073,7 +3073,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="banner_WhatsNew" width="1920" height="670"/>
+        <image name="banner_WhatsNew" width="1920" height="720"/>
         <image name="default_reveal" width="130" height="110"/>
         <image name="delorian" width="45" height="16"/>
         <image name="reveal_pretty" width="800" height="600"/>
