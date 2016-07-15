@@ -17,6 +17,9 @@ final class WhatsNewViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    self.constellationView.animatedIcons = Array(count: 52, repeatedValue: UIImage(named: "icon-generic")!)
+    self.constellationView.animating = true
+
     self.collectionView?.dataSource = self.dataSource
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
@@ -37,6 +40,7 @@ final class WhatsNewViewController: UIViewController {
 
   private let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 
+  @IBOutlet private var constellationView: IconConstellationView!
   @IBOutlet private var collectionView: UICollectionView!
 }
 
