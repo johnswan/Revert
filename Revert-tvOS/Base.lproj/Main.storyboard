@@ -65,7 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.68479305505752563" blue="0.85942310094833374" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.045802327731331527" green="0.37506262463543272" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="KVv-8A-u7a" kind="relationship" relationship="viewControllers" id="qsL-ra-9EC"/>
@@ -2537,7 +2537,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z3p-1b-hSq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uAV-w1-nGw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uAV-w1-nGw">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
